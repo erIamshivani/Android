@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40FF6EB4"
+    android:layout_margin="5dp"
+    tools:context="com.example.shivanii.assign1.fourth">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Division"
+        android:textSize="45dp"
+        android:textAlignment="center"
+        android:background="#4000"
+
+        android:textColor="#FFF"
+        android:fontFamily="serif"
+
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Number1"
+        android:id="@+id/num1"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="116dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Number2"
+        android:id="@+id/num2"
+        android:layout_alignBaseline="@+id/num1"
+        android:layout_alignBottom="@+id/num1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="44dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divide"
+        android:textSize="25dp"
+        android:onClick="div"
+        android:layout_marginTop="47dp"
+        android:id="@+id/button3"
+        android:layout_below="@+id/num1"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="END"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/num2"
+        android:layout_marginBottom="31dp"
+        android:onClick="next"
+        android:id="@+id/button5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Result"
+        android:textSize="40dp"
+        android:layout_marginTop="59dp"
+        android:id="@+id/res1"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prev"
+        android:textSize="20dp"
+        android:onClick="prev"
+        android:layout_alignBaseline="@+id/button5"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_toStartOf="@+id/button3" />
+
+</RelativeLayout>
